@@ -134,3 +134,49 @@ main{
     color: rgb(234, 2, 45);
     cursor: pointer;
 }
+/* Small screens (e.g. iPhone 5) */
+@media only screen and (max-width: 320px) {
+  /* Adjust font sizes and spacing */
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  #new-task-input {
+    width: 100%;
+    padding: 10px;
+  }
+  #new-task-submit {
+    width: 100%;
+    padding: 10px;
+  }
+  .task-list {
+    padding: 20px;
+  }
+}
+
+/* Medium screens (e.g. iPad) */
+@media only screen and (max-width: 768px) {
+  /* Adjust layout and spacing */
+  main {
+    flex-direction: column;
+  }
+  .task-list {
+    padding: 40px;
+  }
+}
+
+/* Large screens (e.g. desktop) */
+@media only screen and (min-width: 1024px) {
+  /* Adjust layout and spacing */
+  main {
+    flex-direction: row;
+  }
+  .task-list {
+    padding: 60px;
+  }
+}
